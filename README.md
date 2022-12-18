@@ -118,7 +118,7 @@ For each model, make a folder with the appropriate file name. For example, for t
     name: "Amandine",
     role: "member",
     plan: "silver",
-    mainLocation: "10011",
+    mainLocation: "11011",
   },
 ];
 ```
@@ -168,7 +168,7 @@ For each model, make a folder with the appropriate file name. For example, for t
     model: "Bowflexer 4000",
     type: "Extreme Fitness Bench",
     purchased: 2006,
-    location: 10011,
+    location: 11011,
   },
 ];
 ```
