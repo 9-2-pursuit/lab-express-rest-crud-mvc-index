@@ -2,7 +2,7 @@
 
 A new fantastic fitness place called Express Fitness has just opened up.
 
-Your job will be to be to begin building a custom app that keeps track of numerous essential resources for the business such as locations, people, special events, plans, and workout machines.
+Your job will be to begin building a custom app that keeps track of numerous essential resources for the business such as locations, people, special events, plans, and workout machines.
 
 ## Lab Setup
 
