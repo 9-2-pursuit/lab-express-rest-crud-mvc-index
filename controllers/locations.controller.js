@@ -8,18 +8,12 @@ locations.get("/", (req, res) => {
 });
 
 locations.get("/people", (req, res) => {
-    // const matchingZip = locationsArray.find(({ zip }) => zip === personsArray.map((z) => z.mainLocation))
-    // const locationsZip = locationsArray.map(({ zip }) => zip)
-    // console.log(locationsZip)
-    // const personsZip = personsArray.map(({ mainLocation }) => mainLocation)
-    // console.log(personsZip)
-
-  locationsArray.people = personsArray.map((p) => p)
-    console.log(locationsArray)
-    // console.log(locationsZip)
-
-    // console.log(matchingZip)
-    res.json(locationsArray)
+    const locationsCopy = [...locationsArray]
+    const matchingZip = locationsCopy.map((loc) => {
+        loc["people"] = personsArray.filter(({ mainLocation }) => loc.zip === mainLocation)
+        return loc
+    })
+    res.json(matchingZip)
 })
 
 locations.get("/:arrayIndex", (req, res) => {
