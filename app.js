@@ -7,17 +7,19 @@ const specialEventsController = require("./controllers/special-events.controller
 
 const app = express();
 
+app.use(express.json())
+
 app.get("/", (req, res) => {
     res.send("Hello, world!");
 });
   
 app.use("/locations", locationsController);
 
-app.use("/people", peopleController);
+app.use("/persons", peopleController);
 
 app.use("/plans", plansController);
 
-app.use("/equipment", machinesController);
+app.use("/machines", machinesController);
 
 app.use("/special-events", specialEventsController);
 
