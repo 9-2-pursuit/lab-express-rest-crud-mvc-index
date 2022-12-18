@@ -1,9 +1,14 @@
 const express = require("express");
-const locations = express.Router();
-const locationsArray = require("../models/location.model.js");
+const machines = express.Router();
+const machinesArray = require("../models/machine.model.js");
 
-locations.get("/", (req, res) => {
-  res.json(locationsArray);
+machines.get("/", (req, res) => {
+  res.json(machinesArray);
 });
 
-module.exports = locations;
+machines.get("/:arrayIndex", (req, res) => {
+    // const { arrayIndex } = req.params;
+    res.json(machinesArray[req.params.arrayIndex]);
+  });
+
+module.exports = machines;
