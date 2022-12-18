@@ -11,7 +11,7 @@ peopleByLocation.get("/", (req, res) => {
     result[index].people = people;
   });
 
-  res.send(result);
+  res.json(result);
 });
 
 module.exports = peopleByLocation;

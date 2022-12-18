@@ -4,7 +4,7 @@ const people = express.Router();
 const personArr = require("../models/person.model");
 
 people.get("/", (req, res) => {
-  res.send(personArr);
+  res.json(personArr);
 });
 
 module.exports = people;

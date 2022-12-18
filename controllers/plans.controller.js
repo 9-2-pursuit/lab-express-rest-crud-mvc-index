@@ -3,7 +3,7 @@ const plans = express.Router();
 const planArr = require("../models/plan.model");
 
 plans.get("/", (req, res) => {
-  res.send(planArr);
+  res.json(planArr);
 });
 
 module.exports = plans;

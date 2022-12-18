@@ -3,7 +3,7 @@ const specialEvents = express.Router();
 const eventArr = require("../models/special-event.model");
 
 specialEvents.get("/", (req, res) => {
-  res.send(eventArr);
+  res.json(eventArr);
 });
 
 module.exports = specialEvents;

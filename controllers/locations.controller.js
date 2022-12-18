@@ -3,7 +3,7 @@ const locations = express.Router();
 const locationArr = require("../models/location.model");
 
 locations.get("/", (req, res) => {
-  res.send(locationArr);
+  res.json(locationArr);
 });
 
 module.exports = locations;
