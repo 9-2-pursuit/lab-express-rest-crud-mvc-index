@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 //   res.json({ error: "Sorry, no page found!" });
 // });
 
-// index Route Consts
+// index Routes
 const locationsController = require("./controllers/locations.controller.js");
 app.use("/locations", locationsController);
 
@@ -23,6 +23,12 @@ app.use("/machines", machinesController);
 
 const specialEventsController = require("./controllers/special-events.controller.js");
 app.use("/special-events", specialEventsController);
+
+const plansController = require("./controllers/plans.controller.js");
+app.use("/plans", plansController);
+
+const personsController = require("./controllers/persons.controller.js");
+app.use("/persons", personsController);
 
 //Export
 module.exports = app;
