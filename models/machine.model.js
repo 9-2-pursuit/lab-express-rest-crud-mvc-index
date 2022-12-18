@@ -18,6 +18,6 @@ module.exports = [
     model: "Bowflexer 4000",
     type: "Extreme Fitness Bench",
     purchased: 2006,
-    location: 10011,
+    location: 11011,
   },
 ];

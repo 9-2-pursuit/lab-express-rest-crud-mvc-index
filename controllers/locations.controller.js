@@ -11,11 +11,7 @@ locations.get("/people", (req, res) => {
   const locationsArrayCopy = [...locationsArray];
   locationsArrayCopy.map((loc) => {
     return (loc.people = personsArray.filter((person) => {
-      // || work around for 23 Broadway
-      return (
-        person.mainLocation === loc.zip ||
-        (person.mainLocation === "10011" && loc.zip === "11011")
-      );
+      return person.mainLocation === loc.zip;
     }));
   });
   res.json(locationsArray);
