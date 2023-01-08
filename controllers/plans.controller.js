@@ -6,4 +6,8 @@ plans.get("/", (req, res) => {
   res.json(plansArray);
 });
 
+plans.get("/:arrayIndex", (req, res) => {
+  res.json(plansArray[req.params.arrayIndex]);
+});
+
 module.exports = plans;

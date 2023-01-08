@@ -6,4 +6,8 @@ specialEv.get("/", (req, res) => {
   res.json(specialEvArray);
 });
 
+specialEv.get("/:arrayIndex", (req, res) => {
+  res.json(specialEvArray[req.params.arrayIndex]);
+});
+
 module.exports = specialEv;

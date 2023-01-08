@@ -6,4 +6,8 @@ persons.get("/", (req, res) => {
   res.json(personsArray);
 });
 
+persons.get("/:arrayIndex", (req, res) => {
+  res.json(personsArray[req.params.arrayIndex]);
+});
+
 module.exports = persons;

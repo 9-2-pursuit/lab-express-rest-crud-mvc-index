@@ -6,4 +6,8 @@ machines.get("/", (req, res) => {
   res.json(machinesArray);
 });
 
+machines.get("/:arrayIndex", (req, res) => {
+  res.json(machinesArray[req.params.arrayIndex]);
+});
+
 module.exports = machines;
