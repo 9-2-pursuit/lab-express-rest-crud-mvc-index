@@ -33,7 +33,7 @@ module.exports = {
       model: "Bowflexer 4000",
       type: "Extreme Fitness Bench",
       purchased: 2006,
-      location: 10011,
+      location: 11011,
     },
   ],
   persons: [
@@ -53,7 +53,7 @@ module.exports = {
       name: "Amandine",
       role: "member",
       plan: "silver",
-      mainLocation: "10011",
+      mainLocation: "11011",
     },
   ],
   plans: [
