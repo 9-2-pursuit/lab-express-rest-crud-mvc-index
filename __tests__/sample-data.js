@@ -53,7 +53,7 @@ module.exports = {
       name: "Amandine",
       role: "member",
       plan: "silver",
-      mainLocation: "10011",
+      mainLocation: "10011", 
     },
   ],
   plans: [
