@@ -1,5 +1,3 @@
-
-
 const locationsData = require("../models/location.model");
 
 const locations = (req, res) => {
