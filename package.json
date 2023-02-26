@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/joinpursuit/express-fitness#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "jest": "^28.1.0",
